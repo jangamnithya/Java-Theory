@@ -1,0 +1,89 @@
+length()
+Returns the number of characters in the string.
+Example: "Hello".length() → 5
+
+charAt(int index)
+Returns the character at the specified position (index starts at 0).
+Example: "Hello".charAt(1) → 'e'
+
+toLowerCase()
+Converts all characters in the string to lowercase.
+Example: "Hello".toLowerCase() → "hello"
+
+toUpperCase()
+Converts all characters to uppercase.
+Example: "Hello".toUpperCase() → "HELLO"
+
+trim()
+Removes leading and trailing whitespace (spaces, tabs).
+Example: " Hello ".trim() → "Hello"
+
+substring(int beginIndex)
+Returns part of the string from beginIndex to the end.
+Example: "Hello".substring(2) → "llo"
+
+substring(int beginIndex, int endIndex)
+Returns part of the string from beginIndex up to (but not including) endIndex.
+Example: "Hello".substring(1,4) → "ell"
+
+contains(CharSequence s)
+Checks if the string contains the specified sequence of characters. Returns true/false.
+Example: "Hello".contains("ell") → true
+
+equals(Object anObject)
+Compares two strings for exact equality (case-sensitive).
+Example: "Hello".equals("hello") → false
+
+equalsIgnoreCase(String anotherString)
+Compares two strings for equality, ignoring case differences.
+Example: "Hello".equalsIgnoreCase("hello") → true
+
+indexOf(int ch)
+Returns the index of the first occurrence of a character, or -1 if not found.
+Example: "Hello".indexOf('l') → 2
+
+lastIndexOf(int ch)
+Returns the index of the last occurrence of a character.
+Example: "Hello".lastIndexOf('l') → 3
+
+replace(char oldChar, char newChar)
+Replaces all occurrences of oldChar with newChar.
+Example: "Hello".replace('l', 'x') → "Hexxo"
+
+split(String regex)
+Splits the string into an array based on the given delimiter (regular expression).
+Example: "a,b,c".split(",") → ["a", "b", "c"]
+
+startsWith(String prefix)
+Checks if the string starts with the specified prefix. Returns true/false.
+Example: "Hello".startsWith("He") → true
+
+endsWith(String suffix)
+Checks if the string ends with the specified suffix.
+Example: "Hello".endsWith("lo") → true
+
+concat(String str)
+Concatenates (joins) another string at the end.
+Example: "Hello".concat(" World") → "Hello World"
+
+isEmpty()
+Returns true if the string length is zero.
+Example: "".isEmpty() → true
+
+compareTo(String anotherString)
+Compares two strings lexicographically (dictionary order). Returns:
+
+0 if equal
+
+Negative if this string is before the argument
+
+Positive if after
+Example: "abc".compareTo("abd") → negative number
+
+toCharArray()
+Converts the string into a char array.
+Example: "Hi".toCharArray() → ['H', 'i']
+
+valueOf()
+Converts other data types (int, double, etc.) to string.
+Example: String.valueOf(10) → "10"
